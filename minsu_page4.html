@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山境民宿 - 預約須知</title>
+    <link rel="stylesheet" href="css/testfinal.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="minsu_index.html" class="logo">山境民宿</a>
+                <ul class="nav-links">
+                    <li><a href="minsu_index.html">首頁</a></li>
+                    <li><a href="minsu_page1.html">房屋展示</a></li>
+                    <li><a href="minsu_page2.html">設施介紹</a></li>
+                    <li><a href="minsu_page3.html">服務內容</a></li>
+                    <li><a href="minsu_page4.html" class="active">預約須知</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">預約須知與價格方案</h1>
+            
+            <div class="pricing-section">
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h2 class="pricing-type">平日包棟</h2>
+                        <p class="pricing-subtitle">週日至週四（非連假）</p>
+                    </div>
+                    <div class="price-display">
+                        <span class="price-amount">NT$ 8,800</span>
+                        <div class="price-unit">每晚 / 整棟</div>
+                    </div>
+                    <button class="book-btn" onclick="bookNow('平日')">立即預約</button>
+                </div>
+
+
+                <div class="pricing-card">
+                    <div class="popular-tag">熱門</div>
+                    <div class="pricing-header">
+                        <h2 class="pricing-type">節假日包棟</h2>
+                        <p class="pricing-subtitle">週五、週六及國定假日</p>
+                    </div>
+                    <div class="price-display">
+                        <span class="price-amount">NT$ 12,800</span>
+                        <div class="price-unit">每晚 / 整棟</div>
+                    </div>
+                    <button class="book-btn" onclick="bookNow('節假日')">立即預約</button>
+                </div>
+
+  
+                <div class="pricing-card summer-card">
+                    <div class="pricing-header">
+                        <h2 class="pricing-type">暑假包棟</h2>
+                        <p class="pricing-subtitle">7-8月暑假期間</p>
+                    </div>
+                    <div class="price-display">
+                        <span class="price-amount">NT$ 15,800</span>
+                        <div class="price-unit">每晚 / 整棟</div>
+                    </div>
+                    <button class="book-btn" onclick="bookNow('暑假')">立即預約</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="map-float" onclick="openMap()">
+        <div class="map-header">📍 山境民宿位置D</div>
+        <div class="map-content">
+            點擊查看詳細地圖<br>
+            宜蘭縣冬山鄉寶德路612號<br>
+        </div>
+    </div>
+       <script src="javascript/testfinal.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>房屋展示 - 山境民宿</title>
+    <link rel="stylesheet" href="css/testfinal.css">
+</head>
+<body>
+   
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="minsu_index.html" class="logo">山境民宿</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="minsu_index.html">首頁</a></li>
+                <li><a href="minsu_page1.html" class="active">房屋展示</a></li>
+                <li><a href="minsu_page2.html">設施介紹</a></li>
+                <li><a href="minsu_page3.html">服務內容</a></li>
+                <li><a href="minsu_page4.html">預約須知</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>房屋展示</h1>
+            <p>探索山境民宿的每一個角落，感受自然與舒適的完美結合</p>
+        </div>
+    </section>
+
+
+    <section class="gallery-section">
+        <div class="container">
+      
+            <div class="featured-section fade-in">
+                <h2 class="section-title">精選空間</h2>
+                <p class="section-subtitle">民宿最具代表性的空間展示</p>
+                
+                <div class="featured-grid">
+                    <div class="featured-item" onclick="openLightbox('pool')">
+                        <img src="images/pool.jpg" alt="風景泳池">
+                        <div class="image-overlay">
+                            <div class="image-title">風景泳池</div>
+                            <div class="image-description">享受在田中泳池，和家人朋友在田野中放鬆</div>
+                        </div>
+                    </div>
+                    
+                    <div class="featured-item" onclick="openLightbox('house')">
+                        <img src="images/house.jpg" alt="民宿正面">
+                        <div class="image-overlay">
+                            <div class="image-title">山境民宿正面</div>
+                            <div class="image-description">融合現代建築與自然元素，坐落在綠意盎然的山腰上，與周圍環境和諧共存</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rooms-section fade-in">
+                <h2 class="section-title">房間內部展示</h2>
+                <p class="section-subtitle">詳細展示房間各個區域的精緻設計與舒適環境</p>
+                
+                <div class="rooms-grid">
+
+                    <div class="room-card" onclick="openLightbox('room1')">
+                        <div class="room-image-container">
+                            <img src="images/room.jpg" alt="房間整體空間">
+                        </div>
+                        <div class="room-content">
+                            <h3 class="room-title">房間整體空間</h3>
+                            <p class="room-features">• 開放式設計布局<br>• 自然採光充足<br>• 溫馨木質裝潢<br>• 山景落地窗</p>
+                            <p class="room-price">寬敞舒適的住宿空間</p>
+                        </div>
+                    </div>
+
+       
+                    <div class="room-card" onclick="openLightbox('room2')">
+                        <div class="room-image-container">
+                            <img src="images/bath.jpg" alt="精緻浴室空間">
+                        </div>
+                        <div class="room-content">
+                            <h3 class="room-title">精緻浴室空間</h3>
+                            <p class="room-features">• 乾濕分離設計<br>• 高級衛浴設備<br>• 大理石檯面<br>• 24小時熱水</p>
+                            <p class="room-price">現代化衛浴設施</p>
+                        </div>
+                    </div>
+
+
+                    <div class="room-card" onclick="openLightbox('room3')">
+                        <div class="room-image-container">
+                            <img src="images/Sun.jpg" alt="私人景觀陽台">
+                        </div>
+                        <div class="room-content">
+                            <h3 class="room-title">私人景觀陽台</h3>
+                            <p class="room-features">• 180度山景視野<br>• 戶外休閒桌椅<br>• 清晨觀日出<br>• 夜晚賞星空</p>
+                            <p class="room-price">絕佳的觀景體驗</p>
+                        </div>
+                    </div>
+
+                    <div class="room-card" onclick="openLightbox('room4')">
+                        <div class="room-image-container">
+                            <img src="images/mainroom.jpg" alt="溫馨客廳區域">
+                        </div>
+                        <div class="room-content">
+                            <h3 class="room-title">溫馨客廳區域</h3>
+                            <p class="room-features">• 舒適沙發座椅<br>• 茶几休憩區<br>• 智慧電視設備<br>• 閱讀角落</p>
+                            <p class="room-price">放鬆休憩的空間</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <div id="lightbox-image" class="lightbox-image"></div>
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+       <script src="javascript/testfinal.js"></script>
+</body>
+</html>

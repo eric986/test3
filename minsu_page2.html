@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>房屋展示 - 山境民宿</title>
+    <link rel="stylesheet" href="css/testfinal.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="minsu_index.html" class="logo">山境民宿</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="minsu_index.html">首頁</a></li>
+                <li><a href="minsu_page1.html">房屋展示</a></li>
+                <li><a href="minsu_page2.html" class="active">設施介紹</a></li>
+                <li><a href="minsu_page3.html">服務內容</a></li>
+                <li><a href="minsu_page4.html">預約須知</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>設施介紹</h1>
+            <p>為您打造舒適便利的住宿體驗，每項設施都經過精心規劃與維護</p>
+        </div>
+    </section>
+
+
+    <section class="gallery-section">
+        <div class="container">
+            
+ 
+            <div class="rooms-section fade-in">
+                <h2 class="section-title">完善設施</h2>
+                <p class="section-subtitle">提供您居家般的舒適與便利</p>
+                
+                <div class="rooms-grid">
+    
+                    <div class="room-card" onclick="openLightbox('MJ')">
+                        <div class="room-image-container">
+                            <img src="images/MJ.jpg" alt="房間整體空間">
+                        </div>
+                        <div class="room-content">
+                            <h3 class="room-title">麻將桌</h3>
+                            <p class="room-features"> 提供全自動麻將桌，讓您與親朋好友享受悠閒的娛樂時光。桌面寬敞舒適，配備齊全的麻將用具，
+                                無論是家庭聚會或朋友聚餐後的小憩時光，都能在此度過愉快的時光。位於獨立的娛樂室內，
+                                不會影響其他房客的休息。</p>
+                        </div>
+                    </div>
+
+                    <div class="room-card" onclick="openLightbox('kitchen')">
+                        <div class="room-image-container">
+                            <img src="images/kitchen.jpg" alt="">
+                        </div>
+                        <div class="room-content">
+                           <h3 class="room-title">開放式廚房</h3>
+                            <p class="room-features"> 現代化的開放式廚房設計，配備完整的烹飪設備包括電磁爐、微波爐、電鍋、冰箱等。
+                                寬敞的料理台面讓您可以輕鬆準備餐點，享受親手烹飪的樂趣。廚具餐具一應俱全，
+                                讓您在民宿也能享受家的溫暖，與家人朋友一起下廚同樂。</p>
+                        </div>
+                    </div>
+
+     
+                    <div class="room-card" onclick="openLightbox('UD')">
+                        <div class="room-image-container">
+                            <img src="images/UD.jpg" alt="">
+                        </div>
+                        <div class="room-content">
+                           <h3 class="room-title">無障礙電梯</h3>
+                            <p class="room-features">  為了提供更便利的住宿體驗，民宿配備了安全可靠的電梯設施。無論是攜帶大型行李、
+                                行動不便的長輩，或是帶著小朋友的家庭，都能輕鬆往返各樓層。電梯內部寬敞明亮，
+                                運行平穩安靜，確保每位房客的使用安全與舒適。</p>
+                        </div>
+                    </div>
+
+
+                    <div class="room-card" onclick="openLightbox('BBQ')">
+                        <div class="room-image-container">
+                            <img src="images/BBQ.jpg" alt="">
+                        </div>
+                        <div class="room-content">
+                             <h3 class="room-title">戶外烤肉區</h3>
+                            <p class="room-features">   設有專業的戶外烤肉區，配備高品質烤爐和完整的烤肉用具。在群山環繞的自然環境中，
+                                與親友一起享受烤肉的樂趣，是最棒的聚會體驗。烤肉區附設洗手台和垃圾處理設施，
+                                讓您能夠輕鬆享受美食時光，同時保持環境整潔。</p>
+                        </div>
+                    </div>
+
+                    <div class="room-card" onclick="openLightbox('pool')">
+                        <div class="room-image-container">
+                            <img src="images/pool.jpg" alt="">
+                        </div>
+                        <div class="room-content">
+                             <h3 class="room-title">景觀泳池</h3>
+                            <p class="room-features"> 擁有絕美山景的戶外泳池，是民宿的一大亮點。清澈的池水配上周圍的自然景色，
+                                讓您在游泳的同時也能欣賞到壯麗的山林美景。泳池周圍設有舒適的休息區和遮陽設施，
+                                無論是暢游或是在池邊放鬆，都能享受到度假般的悠閒時光。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <div id="lightbox-image" class="lightbox-image"></div>
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+       <script src="javascript/testfinal.js"></script>
+</body>
+</html>
